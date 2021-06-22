@@ -5,12 +5,12 @@ using UnityEngine;
 public class TargetIndicator : MonoBehaviour
 {
     public Transform Target;
-    private GameObject myArrow;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        myArrow = this.transform.Find("Arrow").gameObject;
+       
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class TargetIndicator : MonoBehaviour
 
         if (Target == null)
         {
-            Destroy(myArrow);
+
         }
        
     }
