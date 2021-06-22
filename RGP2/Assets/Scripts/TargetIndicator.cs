@@ -5,7 +5,7 @@ using UnityEngine;
 public class TargetIndicator : MonoBehaviour
 {
     public Transform Target;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -23,10 +23,6 @@ public class TargetIndicator : MonoBehaviour
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-        if (Target == null)
-        {
-
-        }
        
     }
 }
