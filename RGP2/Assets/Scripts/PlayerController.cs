@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public GameObject vetArrow;
     bool inVet;
     bool nearDog;
+    GameObject currentDestroyTarget;
     
 
 
@@ -49,17 +50,52 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (inVet == true)
+            if (inVet == true && carryingDog == true)
             {
+                dogsSaved = dogsSaved + 1;
+                dropOffText.text = "Good Job";
+                dogCounter.text = dogsSaved.ToString("0") + "/5";
+                vetArrow.SetActive(false);
+                for (int i = 0; i < dogArrows.Length; i++)
+                {
+                    dogArrows[i].SetActive(true);
+                }
 
+                DroppedOff();
+            }
+
+            if (nearDog == true && currentDestroyTarget.tag == "Dog")
+            {
+                Destroy(currentDestroyTarget);
+                currentDestroyTarget = null;
+                HasDog();
             }
 
         }
+
+        if (dogsSaved == 5)
+        {
+            //win
+        }
     }
 
-    private void FixedUpdate()
+    void DroppedOff()
     {
-        
+        carryingDog = false;
+        nearDog = false;
+    }
+
+
+    void HasDog()
+    {
+        nearDog = false;
+        carryingDog = true;
+        vetArrow.SetActive(true);
+        dogsCarried = dogsCarried + 1;
+        for (int i = 0; i < dogArrows.Length; i++)
+        {
+            dogArrows[i].SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -67,20 +103,26 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Vet")
         {
             inVet = true;
-            
-            //EnterVet();
+
+            if (carryingDog == false)
+            {
+                vetText.text = "Please return with a stray dog in need";
+            }
+
+            else if (carryingDog == true)
+            {
+                vetText.text = "Please press space to drop off the dog";
+            }
+
         }
 
         if (other.gameObject.tag == "Dog")
         {
             if (carryingDog == false)
             {
+                currentDestroyTarget = other.gameObject;
+                nearDog = true;
                 vetText.text = "Press space to pick me up";
-                if (Input.GetKeyDown(KeyCode.Space) && other.gameObject.tag == "Dog")
-                {
-                    Destroy(other.gameObject);
-                    HasDog();
-                }
             }
 
             else if (carryingDog == true)
@@ -92,14 +134,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && other.gameObject.tag == "Dog")
-        {
-            Destroy(other.gameObject);
-            HasDog();
-        }
-    }
 
 
     private void OnTriggerExit2D(Collider2D other)
@@ -114,6 +148,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Dog")
         {
             vetText.text = " ";
+            nearDog = false;
         }
 
 
@@ -134,55 +169,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void EnterVet()
-    {
-        if (carryingDog == true)
-        {
-            vetText.text = "Please press space to drop off the dog";
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                dogsSaved = dogsSaved + 1;
-                dropOffText.text = "Good Job";
-                dogCounter.text = dogsSaved.ToString("0") +"/8";
-                vetArrow.SetActive(false);
-                for (int i = 0; i < dogArrows.Length; i++)
-                {
-                    dogArrows[i].SetActive(true);
-                }
-            }
-        }
 
-        else if (carryingDog == false)
-        {
-            vetText.text = "Please return with a stray dog in need";
-        }
-    }
-
-    void LeaveVet()
-    {
-
-    }
-
-    void EnterDog()
-    {
-       
-    }
-
-    void HasDog()
-    {
-        carryingDog = true;
-        vetArrow.SetActive(true);
-        dogsCarried = dogsCarried + 1;
-        for (int i = 0; i < dogArrows.Length; i++)
-        {
-            dogArrows[i].SetActive(false);
-        }
-    }
-
-
-    void ArrowOrganise()
-    {
-
-    }
 
 }
