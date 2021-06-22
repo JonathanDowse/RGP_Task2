@@ -23,7 +23,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gamePaused == false)
+        if (gamePaused == false && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
         }
