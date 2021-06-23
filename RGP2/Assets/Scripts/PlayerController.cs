@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public GameObject lossDogCountText;
     public GameObject winBackdrop;
     public GameObject winScreen;
+    public UnityEngine.UI.Image winBackdropImage;
 
 
     // Start is called before the first frame update
@@ -93,7 +94,9 @@ public class PlayerController : MonoBehaviour
         if (dogsSaved == 5)
         {
             winScreen.SetActive(true);
+            winBackdrop.GetComponent<UnityEngine.UI.Image>().color = Color.white;
             winBackdrop.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+
             Invoke("LoadWinScreen", 2f);
         }
     }

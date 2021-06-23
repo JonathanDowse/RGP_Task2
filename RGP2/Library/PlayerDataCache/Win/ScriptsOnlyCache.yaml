@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - TargetIndicator
     - TargetIndicator1
     - Timer
+    - WinScreen
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -77,37 +78,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2196}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2368}
+      Script: {instanceID: 2392}
     - Class: 114
-      Script: {instanceID: 2430}
+      Script: {instanceID: 2454}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2654}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2724}
+      Script: {instanceID: 2748}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3834}
+      Script: {instanceID: 3858}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 4108}
     - Class: 114
-      Script: {instanceID: 4110}
+      Script: {instanceID: 4136}
     - Class: 114
-      Script: {instanceID: 4194}
+      Script: {instanceID: 4220}
     - Class: 114
-      Script: {instanceID: 4444}
+      Script: {instanceID: 4470}
     - Class: 114
-      Script: {instanceID: 4716}
+      Script: {instanceID: 4742}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -144,23 +145,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2196}
+      Script: {instanceID: 2166}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 4240}
+      Script: {instanceID: 3368}
     - Class: 114
-      Script: {instanceID: 23152}
+      Script: {instanceID: 4266}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -199,21 +200,70 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1514}
+      Script: {instanceID: 1536}
     - Class: 114
-      Script: {instanceID: 2196}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2636}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2800}
     - Class: 114
-      Script: {instanceID: 2990}
+      Script: {instanceID: 3014}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3256}
     - Class: 114
-      Script: {instanceID: 3344}
+      Script: {instanceID: 3368}
     - Class: 114
-      Script: {instanceID: 4240}
+      Script: {instanceID: 4266}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/WinScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1536}
+    - Class: 114
+      Script: {instanceID: 2220}
+    - Class: 114
+      Script: {instanceID: 2636}
+    - Class: 114
+      Script: {instanceID: 3014}
+    - Class: 114
+      Script: {instanceID: 3368}
+    - Class: 114
+      Script: {instanceID: 3942}
+    - Class: 114
+      Script: {instanceID: 4266}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -331,6 +381,12 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
+      Hash: d58e941d6656bf9295a65865698728df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LossScreen
+  - hash:
+      serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -385,7 +441,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: e6ce0483b9bcb24ddba14747eb9ccafc
+      Hash: d7c19fd10d50e544c86468421e5b20fd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -601,6 +657,12 @@ ScriptsOnlyBuild:
     className: PositionAsUV1
   - hash:
       serializedVersion: 2
+      Hash: 334dc182139727387a7a4c9bec675fda
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinScreen
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -685,7 +747,7 @@ ScriptsOnlyBuild:
     className: SpriteShapeGeometryCache
   - hash:
       serializedVersion: 2
-      Hash: a7933c269865a4401299e535b08f6d5e
+      Hash: e0469db04db450aff9a7ceefe30748df
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CarMovement
@@ -821,21 +883,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: d58e941d6656bf9295a65865698728df
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LossScreen
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LossDrop
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/LossScreen.unity
   - Assets/Scenes/Level.unity
-  playerPath: C:/Users/Jonat/Downloads/test/RGP2.exe
+  - Assets/Scenes/WinScreen.unity
+  playerPath: C:/Users/Jonat/Downloads/test2/RGP2.exe
