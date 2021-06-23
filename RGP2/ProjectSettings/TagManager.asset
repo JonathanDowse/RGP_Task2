@@ -8,6 +8,7 @@ TagManager:
   - Vet
   - Snack
   - Arrow
+  - LossSquares
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Covers
   - 
   - 
   - 

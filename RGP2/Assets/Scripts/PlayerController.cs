@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -20,9 +21,11 @@ public class PlayerController : MonoBehaviour
     bool nearDog;
     GameObject currentDestroyTarget;
     public GameObject snacksParent;
-    GameObject closestArrow;
-    private float oldDistance = 9999;
-    
+    //GameObject closestArrow;
+    //private float oldDistance = 9999;
+    public GameObject lossDogCountText;
+    public GameObject winBackdrop;
+    public GameObject winScreen;
 
 
     // Start is called before the first frame update
@@ -32,7 +35,7 @@ public class PlayerController : MonoBehaviour
         {
             pauseScreen.SetActive(false);
         }
-
+        winScreen.SetActive(false);
         carryingDog = false;
         dogsSaved = 0;
         dogsCarried = 0;
@@ -65,10 +68,10 @@ public class PlayerController : MonoBehaviour
                 //    dogArrows[i].SetActive(true);
                // }
 
-                //foreach(GameObject data in dogArrows)
-                //{
-                //    data.SetActive(true);
-                //}
+                foreach(GameObject data in dogArrows)
+                {
+                    data.SetActive(true);
+                }
 
                 DroppedOff();
             }
@@ -89,7 +92,9 @@ public class PlayerController : MonoBehaviour
 
         if (dogsSaved == 5)
         {
-            //win
+            winScreen.SetActive(true);
+            winBackdrop.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            Invoke("LoadWinScreen", 2f);
         }
     }
 
@@ -185,7 +190,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
+    void LoadWinScreen()
+    {
+        SceneManager.LoadScene("WinScreen");
+    }    
 
 
 }

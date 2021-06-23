@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class Timer : MonoBehaviour
         {
             lossScreen.SetActive(true);
             lossBackdrop.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            Invoke("LoadLossScreen", 2f);
         }
 
         if (!pauseScreen.activeInHierarchy)
@@ -72,6 +74,11 @@ public class Timer : MonoBehaviour
         }
 
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+    }
+
+    void LoadLossScreen()
+    {
+        SceneManager.LoadScene("LossScreen");
     }
 }
 

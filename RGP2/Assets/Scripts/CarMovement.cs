@@ -9,6 +9,8 @@ public class CarMovement : MonoBehaviour
     public float acceleration;
     public float steering;
     public Rigidbody2D rb;
+    public GameObject wheelL;
+    public GameObject wheelR;
 
     private Vector3 pausedVelocity;
     private float pausedAngularVelocity;
@@ -72,14 +74,14 @@ public class CarMovement : MonoBehaviour
             }
 
             Vector2 rightAngleFromForward = Quaternion.AngleAxis(steeringRightAngle, Vector3.forward) * forward;
-            Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(rightAngleFromForward), Color.green);
+           // Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(rightAngleFromForward), Color.green);
 
             float driftForce = Vector2.Dot(rb.velocity, rb.GetRelativeVector(rightAngleFromForward.normalized));
 
             Vector2 relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
 
 
-            Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(relativeForce), Color.red);
+           // Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(relativeForce), Color.red);
 
             rb.AddForce(rb.GetRelativeVector(relativeForce));
         }
