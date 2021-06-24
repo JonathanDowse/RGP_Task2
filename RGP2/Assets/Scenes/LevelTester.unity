@@ -22782,7 +22782,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -22806,13 +22806,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090749569}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -1, y: 32, z: -98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &1090844129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42971,11 +42971,13 @@ Transform:
   - {fileID: 1807508091}
   - {fileID: 237486900}
   - {fileID: 1976618394}
+  - {fileID: 1515533835}
   - {fileID: 1571755292}
   - {fileID: 90748826}
   - {fileID: 1648387145}
   - {fileID: 468786349}
   - {fileID: 2085336238}
+  - {fileID: 1963133598}
   - {fileID: 1498314661}
   - {fileID: 1430500265}
   - {fileID: 1981401933}
@@ -42996,8 +42998,6 @@ Transform:
   - {fileID: 1829874400}
   - {fileID: 719460423}
   - {fileID: 1256417114}
-  - {fileID: 1963133598}
-  - {fileID: 1515533835}
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
