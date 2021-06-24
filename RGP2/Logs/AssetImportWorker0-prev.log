@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 16228 MB
+OS: 'Windows 10 Pro; OS build 19042.1052; Version 2009; 64bit' Language: 'en' Physical Memory: 16309 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,61 +11,61 @@ C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Jonat/Downloads/rgp2 git/RGP_Task2/RGP2
+C:/Users/Liam Burnett-Blue/Documents/Game Design/RGP200/RGP_Task2/RGP2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59041
-Successfully changed project path to: C:/Users/Jonat/Downloads/rgp2 git/RGP_Task2/RGP2
-C:/Users/Jonat/Downloads/rgp2 git/RGP_Task2/RGP2
+64665
+Successfully changed project path to: C:/Users/Liam Burnett-Blue/Documents/Game Design/RGP200/RGP_Task2/RGP2
+C:/Users/Liam Burnett-Blue/Documents/Game Design/RGP200/RGP_Task2/RGP2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.24 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Jonat/Downloads/rgp2 git/RGP_Task2/RGP2/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Liam Burnett-Blue/Documents/Game Design/RGP200/RGP_Task2/RGP2/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
+    Renderer: NVIDIA GeForce RTX 3070 (ID=0x2484)
     Vendor:   
-    VRAM:     5980 MB
-    Driver:   27.21.14.6677
+    VRAM:     8043 MB
+    Driver:   27.21.14.6079
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001959 seconds.
+Registered in 0.007165 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 35.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 47.71 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.000 seconds
+- Completed reload, in  2.724 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006355 seconds.
+Registered in 0.010869 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 37.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 46.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.997 seconds
+- Completed reload, in  1.369 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2093 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 165.1 MB.
 System memory in use after: 165.1 MB.
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2531.
-Total: 2.215900 ms (FindLiveObjects: 0.209800 ms CreateObjectMapping: 0.076800 ms MarkObjects: 1.820400 ms  DeleteObjects: 0.107900 ms)
+Total: 2.862400 ms (FindLiveObjects: 0.220600 ms CreateObjectMapping: 0.048600 ms MarkObjects: 2.431200 ms  DeleteObjects: 0.159900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -79,17 +79,465 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/LevelTester.unity
-  artifactKey: Guid(deb85a402fe5c0943a95b86a380c3247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LevelTester.unity using Guid(deb85a402fe5c0943a95b86a380c3247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85f41fe1b3712fe826f3ec7e31712dd9') in 0.034064 seconds 
-  Import took 0.038034 seconds .
+  path: Assets/Models/LevelRoad.fbx
+  artifactKey: Guid(89c9cde671877934f953a8b146bb8dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/LevelRoad.fbx using Guid(89c9cde671877934f953a8b146bb8dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e13d41e220d4d70955e782d782b67ed') in 0.254356 seconds 
+  Import took 0.258256 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.231039 seconds.
-  path: Assets/Models/level design.fbx
-  artifactKey: Guid(6284617abf659d44e8679293f7b4545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/level design.fbx using Guid(6284617abf659d44e8679293f7b4545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b93b27218357926f1e95fe585a5ccc90') in 0.333973 seconds 
-  Import took 0.337796 seconds .
+  Time since last request: 30.111209 seconds.
+  path: Assets/LevelRoad.fbx
+  artifactKey: Guid(e1cbc81797db22442be9b847cda155d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LevelRoad.fbx using Guid(e1cbc81797db22442be9b847cda155d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c50a53779c27253f2b4c2677111de47') in 0.056724 seconds 
+  Import took 0.060506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 249.182112 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road
+  artifactKey: Guid(a86d44d619792c44ea74e90fdc92ae30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road using Guid(a86d44d619792c44ea74e90fdc92ae30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7f9b265f7f3b9ca6a19981b04a0fc8') in 0.006259 seconds 
+  Import took 0.009931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.051849 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/BG.fbx
+  artifactKey: Guid(55e0638dd873a334f8d9ca4be7c62a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/BG.fbx using Guid(55e0638dd873a334f8d9ca4be7c62a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81602016229040d748b0f49656dbc081') in 0.018499 seconds 
+  Import took 0.022098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_06.fbx
+  artifactKey: Guid(519765f3fbc5ff64aa8f4d2de64401b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_06.fbx using Guid(519765f3fbc5ff64aa8f4d2de64401b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd787c5bd4ec81c73f0b9aa2be3090a84') in 0.018514 seconds 
+  Import took 0.022251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_05.fbx
+  artifactKey: Guid(af68b1f9dd0150f40bc658459fa30307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_05.fbx using Guid(af68b1f9dd0150f40bc658459fa30307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c08a283710fc689c98dd5c99644ee5d') in 0.017085 seconds 
+  Import took 0.021435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/GrassPlane_04.fbx
+  artifactKey: Guid(d4e35299488977445be5a37fdf65b082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/GrassPlane_04.fbx using Guid(d4e35299488977445be5a37fdf65b082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39df72276a44c66dc43c66059b90d135') in 0.016905 seconds 
+  Import took 0.020605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_17.fbx
+  artifactKey: Guid(5e1963462ad4db54f8d73268a9c6c034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_17.fbx using Guid(5e1963462ad4db54f8d73268a9c6c034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b123949397bb58f9fa540690698792b') in 0.017827 seconds 
+  Import took 0.021492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_08.fbx
+  artifactKey: Guid(1bb785876a2704848a42459842694aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_08.fbx using Guid(1bb785876a2704848a42459842694aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d2bc8476346f1463f0951816c81f6e') in 0.016383 seconds 
+  Import took 0.020164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_04.fbx
+  artifactKey: Guid(34c58c78c6f817d4bb1ff41aa1ed7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_04.fbx using Guid(34c58c78c6f817d4bb1ff41aa1ed7224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0153bbc215a847f9f2dc3492cd06abb6') in 0.021522 seconds 
+  Import took 0.027379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/GrassPlane_03.fbx
+  artifactKey: Guid(a1ccbac6edda0c2498a5bee5186bb606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/GrassPlane_03.fbx using Guid(a1ccbac6edda0c2498a5bee5186bb606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b6ea9b8df362a429714ee795a3339f') in 0.026065 seconds 
+  Import took 0.031959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001348 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Tile_01.fbx
+  artifactKey: Guid(d8647e3735536b44987e9f3a6119830c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Tile_01.fbx using Guid(d8647e3735536b44987e9f3a6119830c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb9acf8e20a6a4b3563d464657574cc') in 0.027014 seconds 
+  Import took 0.032919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/GrassPlane_05.fbx
+  artifactKey: Guid(c9c5e348e4317494f940cc0c509a0cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/GrassPlane_05.fbx using Guid(c9c5e348e4317494f940cc0c509a0cd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff1f4535f6e4f2527b5eae5c5dd98cb') in 0.022739 seconds 
+  Import took 0.026867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_11.fbx
+  artifactKey: Guid(e848b28c09c00804b8ec98e88e5feeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_11.fbx using Guid(e848b28c09c00804b8ec98e88e5feeb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794c9ffc52fbe4ec3969503e52239de5') in 0.023225 seconds 
+  Import took 0.028583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_12.fbx
+  artifactKey: Guid(710b95545f06e4f4c9effff6f8ad9e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_12.fbx using Guid(710b95545f06e4f4c9effff6f8ad9e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7477eb2b678b71059e9bc1502c3e5bd') in 0.022785 seconds 
+  Import took 0.028045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/GrassPlane_02.fbx
+  artifactKey: Guid(c5c1439d0e908bb42805308c69482326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/GrassPlane_02.fbx using Guid(c5c1439d0e908bb42805308c69482326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '042d724bf7d465c8ba9087c7973d7b99') in 0.024915 seconds 
+  Import took 0.030585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_19.fbx
+  artifactKey: Guid(9c47294fd7e03c9449480da4bef481cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_19.fbx using Guid(9c47294fd7e03c9449480da4bef481cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe778378b0d50036464eccf89a1ab8ac') in 0.023514 seconds 
+  Import took 0.028483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_18.fbx
+  artifactKey: Guid(fc0e7718825bd1d4bb730d3d001305aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_18.fbx using Guid(fc0e7718825bd1d4bb730d3d001305aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc7cfbfe22e9ad897b446faf5215bfe') in 0.023958 seconds 
+  Import took 0.029081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_03.fbx
+  artifactKey: Guid(1f2b87f514966444b81290347d0b54d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_03.fbx using Guid(1f2b87f514966444b81290347d0b54d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3cc1a8da283ccbed738fa88e28d7d5') in 0.025327 seconds 
+  Import took 0.029751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_02.fbx
+  artifactKey: Guid(17529f2493dd13a4f8ddf6247b44bd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_02.fbx using Guid(17529f2493dd13a4f8ddf6247b44bd70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc18b186678d0baf8b5478d31e382465') in 0.022531 seconds 
+  Import took 0.027836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/GrassPlane_01.fbx
+  artifactKey: Guid(271bd657a90ffca4fbd55cad2e2a9870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/GrassPlane_01.fbx using Guid(271bd657a90ffca4fbd55cad2e2a9870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da38279bcaece60556733bd18547f67f') in 0.024480 seconds 
+  Import took 0.030002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_10.fbx
+  artifactKey: Guid(ea7a7393cf71bbc41a1ff374fdb4210c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_10.fbx using Guid(ea7a7393cf71bbc41a1ff374fdb4210c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b011613139867c5a70951ceb02f0e0ff') in 0.025413 seconds 
+  Import took 0.030803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_15.fbx
+  artifactKey: Guid(e237f4cee5f2c39488f54b02f4cded73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_15.fbx using Guid(e237f4cee5f2c39488f54b02f4cded73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7858fe8f1a6ced1d29bb5067ba5172') in 0.024172 seconds 
+  Import took 0.029653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_01.fbx
+  artifactKey: Guid(9f599ce9d42903946a422879934eb876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_01.fbx using Guid(9f599ce9d42903946a422879934eb876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c106230929756ec297e87d4acec4d975') in 0.024647 seconds 
+  Import took 0.030081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_09.fbx
+  artifactKey: Guid(0d8b7d790e09a9042a6834a741bc7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_09.fbx using Guid(0d8b7d790e09a9042a6834a741bc7233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5385367fabfd7627c8dad8b0974a4fa') in 0.024792 seconds 
+  Import took 0.029904 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_07.fbx
+  artifactKey: Guid(24d0ddf9256627141a4cfb77f869a603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_07.fbx using Guid(24d0ddf9256627141a4cfb77f869a603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803ae88876b9f51b571f6160ea2bb29c') in 0.026437 seconds 
+  Import took 0.032286 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_16.fbx
+  artifactKey: Guid(9fa444ff7fa867f439b52e4d6f1da42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_16.fbx using Guid(9fa444ff7fa867f439b52e4d6f1da42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81011f244e3f7ddb2b8988fe55a323b') in 0.024390 seconds 
+  Import took 0.030420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_13.fbx
+  artifactKey: Guid(d5a7ac062cf670e469dfec04614e5375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_13.fbx using Guid(d5a7ac062cf670e469dfec04614e5375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1098f4ddb35021cb23f264a40b6b659b') in 0.023987 seconds 
+  Import took 0.029191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_14.fbx
+  artifactKey: Guid(dffee7c9feadd2f4b8809ef7b69a170f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_14.fbx using Guid(dffee7c9feadd2f4b8809ef7b69a170f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455ce1970f79a5661f8e58d8faa0176d') in 0.017817 seconds 
+  Import took 0.022693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/CartoonLowPolyCity/Models/Road/Road_20.fbx
+  artifactKey: Guid(d26fadb6559e6e743bfeb1ba8b51c467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Models/Road/Road_20.fbx using Guid(d26fadb6559e6e743bfeb1ba8b51c467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b325831f21a44f154a8115cee6eb4d3') in 0.027318 seconds 
+  Import took 0.032571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.553048 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road
+  artifactKey: Guid(ea239e699a8da444382bc6663384e88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road using Guid(ea239e699a8da444382bc6663384e88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b0238cacee48efdd49dbf8b5add2c4') in 0.005024 seconds 
+  Import took 0.008722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044626 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/BG.prefab
+  artifactKey: Guid(7b0ad3b052b16bb438ed0ba0f5e39e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/BG.prefab using Guid(7b0ad3b052b16bb438ed0ba0f5e39e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa52e619339ada40b4715238298e57ba') in 0.027691 seconds 
+  Import took 0.032815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_07.prefab
+  artifactKey: Guid(9eb88ed85b830654c964e8872704ae54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_07.prefab using Guid(9eb88ed85b830654c964e8872704ae54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0dba26ac296b90211e25c55a89a5f2') in 0.014855 seconds 
+  Import took 0.019350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_04.prefab
+  artifactKey: Guid(ff41fdb257e0b7f45a3f34c2e1751dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_04.prefab using Guid(ff41fdb257e0b7f45a3f34c2e1751dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ad52875effcc621b76ee86f6fa0d31') in 0.013708 seconds 
+  Import took 0.017326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_12.prefab
+  artifactKey: Guid(cc84f0f4d4e45f24ab8ae06a8669c71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_12.prefab using Guid(cc84f0f4d4e45f24ab8ae06a8669c71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3af4890eeb66d9716c0fefc3a76642') in 0.014757 seconds 
+  Import took 0.018239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_08.prefab
+  artifactKey: Guid(ac65e17deb94d594cb324ea8b195d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_08.prefab using Guid(ac65e17deb94d594cb324ea8b195d16e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b866eee1198252b5536add34380e7c5f') in 0.013753 seconds 
+  Import took 0.017268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_09.prefab
+  artifactKey: Guid(7eb885d668b5d0240b852fa2229806d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_09.prefab using Guid(7eb885d668b5d0240b852fa2229806d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d909d6121755a375355c08a0aa85992') in 0.015958 seconds 
+  Import took 0.019642 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_05.prefab
+  artifactKey: Guid(2351f46789cf93645b709b46ae814671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_05.prefab using Guid(2351f46789cf93645b709b46ae814671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53862abd9fc3a421a73161001a72903a') in 0.013572 seconds 
+  Import took 0.017409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_16.prefab
+  artifactKey: Guid(5645feca7a546d14f89976c0668c4ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_16.prefab using Guid(5645feca7a546d14f89976c0668c4ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de431ef54d01fa48aa17dc935f71f97') in 0.016198 seconds 
+  Import took 0.020031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_10.prefab
+  artifactKey: Guid(119c9f6a2fef8b844922f7d53e470324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_10.prefab using Guid(119c9f6a2fef8b844922f7d53e470324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50428a7160b1ead986e6f2a32334b66') in 0.013302 seconds 
+  Import took 0.016915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_20.prefab
+  artifactKey: Guid(b67e1beca935d43489d9a4d82176af1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_20.prefab using Guid(b67e1beca935d43489d9a4d82176af1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ac4a8bcac8ddbd6f1c4b162ae0f0f6') in 0.014504 seconds 
+  Import took 0.018571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_19.prefab
+  artifactKey: Guid(8e0322c1f06fa674cac2bff557b375de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_19.prefab using Guid(8e0322c1f06fa674cac2bff557b375de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301503c14bd5aa39b76c2edb97402e7f') in 0.013765 seconds 
+  Import took 0.017811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_01.prefab
+  artifactKey: Guid(301e681fcc2f46845931a03419d58d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_01.prefab using Guid(301e681fcc2f46845931a03419d58d09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a1988f62f98a3ef61b993384e02e2f') in 0.013489 seconds 
+  Import took 0.016805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_18.prefab
+  artifactKey: Guid(0ea5a8f9ac50c8142a3e2e06efd5c636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_18.prefab using Guid(0ea5a8f9ac50c8142a3e2e06efd5c636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f23f4d1be1e77694fd34368886c1b7e') in 0.015286 seconds 
+  Import took 0.020045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_14.prefab
+  artifactKey: Guid(1e630b9e7e766b24bbd751c2e7d9c871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_14.prefab using Guid(1e630b9e7e766b24bbd751c2e7d9c871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a874e460d2cb2a5ca1529ed4c25e60c') in 0.016224 seconds 
+  Import took 0.020490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_01.prefab
+  artifactKey: Guid(83d8d52aec4c1b14094bbdcf57836a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_01.prefab using Guid(83d8d52aec4c1b14094bbdcf57836a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f12d423f5a09e8982fad693fdee2ca2') in 0.015956 seconds 
+  Import took 0.020814 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_03.prefab
+  artifactKey: Guid(58a82aa714b1d524ebf6e96a7ad7c084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_03.prefab using Guid(58a82aa714b1d524ebf6e96a7ad7c084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0894a290d4528f6c216b03bb3439749') in 0.015477 seconds 
+  Import took 0.019498 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_02.prefab
+  artifactKey: Guid(aa039a7689f07fb429aee6c3da6619c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_02.prefab using Guid(aa039a7689f07fb429aee6c3da6619c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdabf30636731c74ec8741525c5ef764') in 0.014787 seconds 
+  Import took 0.018886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_11.prefab
+  artifactKey: Guid(8813bf92944f1614db4cffc593494f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_11.prefab using Guid(8813bf92944f1614db4cffc593494f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eee309da93eda7c3fa07a4e6be12bf6') in 0.014810 seconds 
+  Import took 0.018883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Tile_01.prefab
+  artifactKey: Guid(9fa52852d69b91f4f8edf417ef7a5c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Tile_01.prefab using Guid(9fa52852d69b91f4f8edf417ef7a5c32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3198cbf0faab03b024c798d5e7afa5') in 0.015344 seconds 
+  Import took 0.020005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_05.prefab
+  artifactKey: Guid(4c15790eae7641449b50ac5d34b2e9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_05.prefab using Guid(4c15790eae7641449b50ac5d34b2e9ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'decaf199a9b8b26b5caea43985c6a0eb') in 0.013765 seconds 
+  Import took 0.017567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_03.prefab
+  artifactKey: Guid(49085352c8e3e5a40984e72e17dadee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_03.prefab using Guid(49085352c8e3e5a40984e72e17dadee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c964653daad0ada5db8cf4581c28b3') in 0.014220 seconds 
+  Import took 0.018774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_17.prefab
+  artifactKey: Guid(e8a0a2afcb3e2914a83f377c225cfc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_17.prefab using Guid(e8a0a2afcb3e2914a83f377c225cfc85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8305ef372f91892f657fc39bb77ecf') in 0.014713 seconds 
+  Import took 0.018305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_06.prefab
+  artifactKey: Guid(8bd5e172d9bbc3544afa249810f76bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_06.prefab using Guid(8bd5e172d9bbc3544afa249810f76bae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d04da0247321c2f0363a28a0b9014ea') in 0.015043 seconds 
+  Import took 0.019032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_15.prefab
+  artifactKey: Guid(7a4e3862e1341a044b3be4f39e0810c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_15.prefab using Guid(7a4e3862e1341a044b3be4f39e0810c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df43561e79c6fe802a004ab9bb81cdac') in 0.016738 seconds 
+  Import took 0.021379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_04.prefab
+  artifactKey: Guid(1f356d0b0cfd27741847f8eb24749c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/GrassPlane_04.prefab using Guid(1f356d0b0cfd27741847f8eb24749c8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4c623cb8368de83728169526d0e668') in 0.015068 seconds 
+  Import took 0.018902 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_02.prefab
+  artifactKey: Guid(fe9fa90c181e9ae42aea3ae90b935501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_02.prefab using Guid(fe9fa90c181e9ae42aea3ae90b935501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7c79a8455e0d67d972b5427be7fc10') in 0.013891 seconds 
+  Import took 0.018261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/CartoonLowPolyCity/Prefabs/Road/Road_13.prefab
+  artifactKey: Guid(b37045997263e1a4a915d357cdeffd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CartoonLowPolyCity/Prefabs/Road/Road_13.prefab using Guid(b37045997263e1a4a915d357cdeffd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18fe3b1ef0fe5204f883b1213446261c') in 0.013938 seconds 
+  Import took 0.018303 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
