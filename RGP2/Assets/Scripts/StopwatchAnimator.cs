@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class StopwatchAnimator : MonoBehaviour
 {
     public Sprite frame1;
@@ -27,44 +27,44 @@ public class StopwatchAnimator : MonoBehaviour
 
     void FrameSwitch()
     {
-        if (this.GetComponent<SpriteRenderer>().sprite == frame1)
+        if (this.GetComponent<Image>().sprite == frame1)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame2;
+            this.GetComponent<Image>().sprite = frame2;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame2)
+        else if (this.GetComponent<Image>().sprite == frame2)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame3;
+            this.GetComponent<Image>().sprite = frame3;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame3)
+        else if (this.GetComponent<Image>().sprite == frame3)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame4;
+            this.GetComponent<Image>().sprite = frame4;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame4)
+        else if (this.GetComponent<Image>().sprite == frame4)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame5;
+            this.GetComponent<Image>().sprite = frame5;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame5)
+        else if (this.GetComponent<Image>().sprite == frame5)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame6;
+            this.GetComponent<Image>().sprite = frame6;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame6)
+        else if (this.GetComponent<Image>().sprite == frame6)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame7;
+            this.GetComponent<Image>().sprite = frame7;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame7)
+        else if (this.GetComponent<Image>().sprite == frame7)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame8;
+            this.GetComponent<Image>().sprite = frame8;
             Invoke("FrameSwitch", 1);
         }
-        else if (this.GetComponent<SpriteRenderer>().sprite == frame8)
+        else if (this.GetComponent<Image>().sprite == frame8)
         {
-            this.GetComponent<SpriteRenderer>().sprite = frame1;
+            this.GetComponent<Image>().sprite = frame1;
             Invoke("FrameSwitch", 1);
         }
     }

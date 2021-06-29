@@ -9,9 +9,6 @@ TagManager:
   - Snack
   - Arrow
   - LossSquares
-  - Stone
-  - Street
-  - Grass
   - Fire
   layers:
   - Default
@@ -23,8 +20,8 @@ TagManager:
   - Covers
   - 
   - 
-  - TimerBox
-  - Snacks
+  - 
+  - 
   - 
   - 
   - 
@@ -50,12 +47,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer
-    uniqueID: 163968177
+  - name: UI
+    uniqueID: 1176194003
     locked: 0
-  - name: New Layer
-    uniqueID: 2128090057
-    locked: 0
-  - name: New Layer
-    uniqueID: 2110540967
+  - name: everything else
+    uniqueID: 2979418673
     locked: 0

@@ -5,13 +5,12 @@ using UnityEngine;
 public class TargetIndicator1 : MonoBehaviour
 {
     public Transform Target;
-    public Transform playerTrans;
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     // Update is called once per frame
@@ -19,8 +18,8 @@ public class TargetIndicator1 : MonoBehaviour
     {
 
 
-        var dir = Target.position - playerTrans.position;
-
+        var dir = Target.position - transform.position;
+      
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
@@ -28,6 +27,6 @@ public class TargetIndicator1 : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-
+       
     }
 }
