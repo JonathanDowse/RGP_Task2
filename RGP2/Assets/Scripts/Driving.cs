@@ -4,17 +4,69 @@ using UnityEngine;
 
 public class Driving : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float rotationSpeed = 100f;
+    public float turnSpeed = 10f;
+    public float moveSpeed = 10f;
+
+    private float leftRight = 0f;
+    private float forward = 0f;
+    public GameObject playerObj;
+
+    bool gamePaused;
+    public GameObject pauseScreen;
+
+    public GameObject wheelR;
+    public GameObject wheelL;
+
+    private void Start()
+    {
+        gamePaused = false;
+        pauseScreen.SetActive(false);
+    }
+
+    void ProcessInput()
+    {
+        leftRight = Input.GetAxis("Horizontal");
+        forward = Input.GetAxis("Vertical");
+    }
 
     private void Update()
     {
-        float translation = Input.GetAxis("Vertical") * speed;
-        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
-        translation *= Time.deltaTime;
-        rotation *= Time.deltaTime;
-        transform.Translate(0, 0, translation);
-        transform.Rotate(0, rotation, 0);
-    }
+        ProcessInput();
+        
+        if (pauseScreen.activeInHierarchy == true)
+        {
+            gamePaused = true;
+        }
 
+        else if (pauseScreen.activeInHierarchy == false)
+        {
+            gamePaused = false;
+        }
+
+
+        if (gamePaused == false)
+        {
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+
+                playerObj.transform.Rotate(Vector3.up, leftRight * turnSpeed * Time.deltaTime);
+                playerObj.transform.Translate(-forward * moveSpeed * Time.deltaTime, 0, 0);
+            }
+
+
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+
+                playerObj.transform.Rotate(Vector3.up, -leftRight * turnSpeed * Time.deltaTime / 3);
+                playerObj.transform.Translate(-forward * moveSpeed * Time.deltaTime / 4, 0, 0);
+            }
+        }
+        
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+
+        }
+
+    }
 }

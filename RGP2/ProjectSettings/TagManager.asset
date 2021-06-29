@@ -9,6 +9,10 @@ TagManager:
   - Snack
   - Arrow
   - LossSquares
+  - Stone
+  - Street
+  - Grass
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -19,8 +23,8 @@ TagManager:
   - Covers
   - 
   - 
-  - 
-  - 
+  - TimerBox
+  - Snacks
   - 
   - 
   - 
@@ -45,4 +49,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 163968177
+    locked: 0
+  - name: New Layer
+    uniqueID: 2128090057
+    locked: 0
+  - name: New Layer
+    uniqueID: 2110540967
     locked: 0
