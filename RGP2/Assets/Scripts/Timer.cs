@@ -51,13 +51,15 @@ public class Timer : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.tag == "Snack")
         {
             Destroy(other.gameObject);
             timeLeft = timeLeft + 10f;
         }
+    
     }
 
     void UpdateTimer()
