@@ -28,26 +28,15 @@ public class DrivingNew : MonoBehaviour
         if (gamePaused == false)
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            { rb.AddForce(-transform.right * thrust); }
-
-            if (Input.GetKey(KeyCode.S))
-            { rb.AddForce(transform.right * thrust); }
-
-
-            if (Input.GetKey(KeyCode.LeftShift))
-                rb.AddForce(transform.forward * thrust * 2, ForceMode.Acceleration);
-
-
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    transform.Rotate(0, -0.25f, 0 );
+                    transform.Rotate(0, -0.5f, 0);
                 }
 
                 if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                    transform.Rotate(0, 0.25f, 0 );
+                    transform.Rotate(0, 0.5f, 0);
                 }
 
 
@@ -59,15 +48,29 @@ public class DrivingNew : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    transform.Rotate(0, -0.25f, 0);
+                    transform.Rotate(0, -0.5f, 0);
                 }
 
                 if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                    transform.Rotate(0, 0.25f, 0 );
+                    transform.Rotate(0, 0.5f, 0);
                 }
 
             }
+
+
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            { rb.AddForce(-transform.right * thrust); }
+
+            if (Input.GetKey(KeyCode.S))
+            { rb.AddForce(transform.right * thrust); }
+
+
+            if (Input.GetKey(KeyCode.LeftShift))
+                rb.AddForce(transform.forward * thrust * 2, ForceMode.Acceleration);
+
+
+            
 
         }
 

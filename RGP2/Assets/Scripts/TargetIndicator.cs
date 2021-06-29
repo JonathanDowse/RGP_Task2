@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class TargetIndicator : MonoBehaviour
 {
-    public Transform Target;
+    public Transform from;
+    public Transform to;
     
 
     // Start is called before the first frame update
     void Start()
     {
-       
+       //childArrow = Get
     }
 
     // Update is called once per frame
@@ -18,11 +19,16 @@ public class TargetIndicator : MonoBehaviour
     {
 
 
-        var dir = Target.position - transform.position;
+       // transform.LookAt(new Vector2(Target.position.x, Target.position.z));
 
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+       // var dir = Target.position - transform.position;
+
+       // var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+       // transform.rotation = Quaternion.FromToRotation(, Vector3.forward);
 
        
     }
+
+
+
 }
