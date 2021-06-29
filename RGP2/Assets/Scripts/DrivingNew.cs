@@ -42,12 +42,12 @@ public class DrivingNew : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    transform.Rotate(0, -1, 0 * thrust);
+                    transform.Rotate(0, -0.25f, 0 );
                 }
 
                 if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                    transform.Rotate(0, 1, 0 * thrust);
+                    transform.Rotate(0, 0.25f, 0 );
                 }
 
 
@@ -59,12 +59,12 @@ public class DrivingNew : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    transform.Rotate(0, -1f, 0 * thrust);
+                    transform.Rotate(0, -0.25f, 0);
                 }
 
                 if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
                 {
-                    transform.Rotate(0, 1f, 0 * thrust);
+                    transform.Rotate(0, 0.25f, 0 );
                 }
 
             }

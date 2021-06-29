@@ -20,7 +20,7 @@ public class TargetIndicator1 : MonoBehaviour
 
         var dir = Target.position - transform.position;
       
-        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        var angle = Mathf.Atan2(dir.z, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         if (dir.x > -0.65 && dir.x < 0.65 && dir.y > -0.65 && dir.y < 0.65 && Input.GetKeyDown(KeyCode.Space))

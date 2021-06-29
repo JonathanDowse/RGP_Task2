@@ -44,12 +44,24 @@ public class Driving : MonoBehaviour
         }
 
 
+   
+        
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
         if (gamePaused == false)
         {
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
 
-                playerObj.transform.Rotate(Vector3.up, leftRight * turnSpeed * Time.deltaTime);
+                playerObj.transform.Rotate(Vector3.up, leftRight * turnSpeed * Time.deltaTime/3);
                 playerObj.transform.Translate(-forward * moveSpeed * Time.deltaTime, 0, 0);
             }
 
@@ -61,12 +73,5 @@ public class Driving : MonoBehaviour
                 playerObj.transform.Translate(-forward * moveSpeed * Time.deltaTime / 4, 0, 0);
             }
         }
-        
-
-        if (Input.GetKey(KeyCode.Escape))
-        {
-
-        }
-
     }
 }
