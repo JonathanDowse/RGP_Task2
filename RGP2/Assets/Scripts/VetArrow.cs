@@ -33,9 +33,5 @@ public class VetArrow : MonoBehaviour
             vetArrowRender.sprite = vetArrow1;
         }
 
-        else
-        {
-            vetArrowRender.sprite = vetArrow1;
-        }
     }
 }

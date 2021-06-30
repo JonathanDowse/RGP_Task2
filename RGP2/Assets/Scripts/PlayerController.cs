@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public Text vetText;
     public GameObject pauseScreen;
     public AudioSource pauseSound;
+    public AudioSource vanDog;
     private bool carryingDog;
     public GameObject vetArrow;
     bool inVet;
@@ -30,7 +31,9 @@ public class PlayerController : MonoBehaviour
     public List<AudioSource> songSource;
     public List<GameObject> dogIcons;
     public GameObject arrowParent;
-
+    public int dogIndex;
+    public List<AudioClip> dogVoices;
+    private AudioClip applyDogVoice;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +55,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
 
@@ -144,6 +149,8 @@ public class PlayerController : MonoBehaviour
         carryingDog = false;
         nearDog = false;
         snacksParent.SetActive(false);
+        CancelInvoke();
+        vanDog.mute = true;
     }
 
 
@@ -154,6 +161,24 @@ public class PlayerController : MonoBehaviour
         vetArrow.SetActive(true);
         dogsCarried = dogsCarried + 1;
         arrowParent.SetActive(false);
+        
+            InvokeRepeating("DogNoises", 2f, 5f);
+        
+    }
+
+
+    void DogNoises()
+    {
+   
+        vanDog.mute = false;
+        dogIndex = Random.Range(0, dogVoices.Count);
+        applyDogVoice = dogVoices[dogIndex];
+        vanDog.clip = applyDogVoice;
+        vanDog.Play();
+        
+        
+        
+        dogIndex = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

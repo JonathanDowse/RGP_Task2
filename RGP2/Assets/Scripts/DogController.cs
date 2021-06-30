@@ -65,8 +65,28 @@ public class DogController : MonoBehaviour
         ApplyDogIdentity();
         age = Random.Range(1, 20);
         weight = Random.Range(5.0f, 30.0f);
+        weight = (Mathf.Round(weight * 100)) / 100;
         //dogNoiseFunction();
-        InvokeRepeating("Barking", 2f, 5f);
+        InvokeRepeating("Barking", 1f, 5f);
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+     if(other.gameObject.tag == "Player")
+        {
+            nearPlayer = true;
+            myArrow.SetActive(false);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            nearPlayer = false;
+            myArrow.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -75,43 +95,31 @@ public class DogController : MonoBehaviour
         
     }
 
-    void dogNoiseFunction()
-    {
-        if (nearPlayer == true)
-        {
-            soundWait = Random.Range(2, 6);
-            Invoke("NearPlayerVoice", soundWait);
-        }
 
-    }
-
-    private void FixedUpdate()
-    {
-       
-
-    }
-
-    void NearPlayerVoice()
-    {
-        soundIndex = Random.Range(0, dogLines.Count);
-        applyClip = dogLines[soundIndex];
-        childSource.clip = applyClip;
-        childSource.Play();
-        soundIndex = 0;
-        soundWait = Random.Range(1, 3);
-        Invoke("Barking", soundWait);
-
-    }
 
     void Barking()
     {
-        soundIndex = Random.Range(0, dogLines.Count);
-        applyClip = dogLines[soundIndex];
-        
-        childSource.clip = applyClip;
-        childSource.Play();
-        soundIndex = 0;
-        
+        if (nearPlayer == true)
+        {
+            soundIndex = Random.Range(0, dogLines.Count);
+            applyClip = dogLines[soundIndex];
+
+            childSource.clip = applyClip;
+            childSource.Play();
+            soundIndex = 0;
+        }
+
+        else if (nearPlayer == false)
+        {
+            soundIndex = Random.Range(0, dogBarks.Count);
+            applyClip = dogBarks[soundIndex];
+
+            childSource.clip = applyClip;
+            childSource.Play();
+            soundIndex = 0;
+        }
+
+
     }
 
     void ApplyNewMesh()
@@ -160,12 +168,12 @@ public class DogController : MonoBehaviour
 
     public void FillIdentity()
     {
-        nameText.text = dogsName;
-        breedText.text = dogsBreed;
+        nameText.text = "Name: " + dogsName;
+        breedText.text = "Breed: " + dogsBreed;
         dogPhoto.sprite = dogsPic;
         dogPhoto.enabled = true;
-        weightText.text = weight.ToString();
-        ageText.text = age.ToString();
+        weightText.text = "Weight: " + weight.ToString() + " kg";
+        ageText.text = "Age; " + age.ToString() + " years old";
         dogControl.SetActive(true);
         nearPlayer = true;
     }
