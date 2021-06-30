@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     bool inVet;
     bool nearDog;
     GameObject currentDestroyTarget;
+    GameObject currentDestroyArrow;
     public GameObject snacksParent;
     //GameObject closestArrow;
     //private float oldDistance = 9999;
@@ -64,21 +65,24 @@ public class PlayerController : MonoBehaviour
                 dropOffText.text = "Good Job";
                 dogCounter.text = dogsSaved.ToString("0") + "/5";
                 vetArrow.SetActive(false);
+                
                 //for (int i = 0; i < dogArrows.Length; i++)
                 //{
                 //    dogArrows[i].SetActive(true);
                // }
 
-                foreach(GameObject data in dogArrows)
-                {
-                    data.SetActive(true);
-                }
+                //foreach(GameObject data in dogArrows)
+                //{
+                //    data.SetActive(true);
+                //}
 
                 DroppedOff();
             }
 
             if (nearDog == true && currentDestroyTarget.tag == "Dog")
             {
+                currentDestroyArrow = currentDestroyTarget.GetComponent<DogController>().myArrow;
+                Destroy(currentDestroyArrow);
                 Destroy(currentDestroyTarget);
                 currentDestroyTarget = null;
                 HasDog();

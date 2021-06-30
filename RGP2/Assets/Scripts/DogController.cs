@@ -21,6 +21,8 @@ public class DogController : MonoBehaviour
     public List<AudioClip> dogBarks;
     private AudioClip currentClip;
     private AudioClip applyClip;
+    public AudioSource childSource;
+    public GameObject myArrow;
 
     public GameObject dogControl;
 
@@ -45,6 +47,8 @@ public class DogController : MonoBehaviour
 
 
     int index;
+    int soundIndex;
+    int soundWait;
 
     private bool nearPlayer;
 
@@ -53,6 +57,7 @@ public class DogController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        childSource = gameObject.GetComponentInChildren<AudioSource>();
         nearPlayer = false;
         ApplySpawnPoint();
         ApplyNewMesh();
@@ -60,6 +65,7 @@ public class DogController : MonoBehaviour
         ApplyDogIdentity();
         age = Random.Range(1, 20);
         weight = Random.Range(5.0f, 30.0f);
+        dogNoiseFunction();
     }
 
     // Update is called once per frame
@@ -67,7 +73,46 @@ public class DogController : MonoBehaviour
     {
         
     }
-    
+
+    void dogNoiseFunction()
+    {
+        if (nearPlayer == true)
+        {
+            soundWait = Random.Range(2, 6);
+            Invoke("NearPlayerVoice", soundWait);
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+       
+
+    }
+
+    void NearPlayerVoice()
+    {
+        soundIndex = Random.Range(0, dogLines.Count);
+        applyClip = dogLines[soundIndex];
+        childSource.clip = applyClip;
+        childSource.Play();
+        soundIndex = 0;
+        soundWait = Random.Range(1, 3);
+        Invoke("Barking", soundWait);
+
+    }
+
+    void Barking()
+    {
+        soundIndex = Random.Range(0, dogBarks.Count);
+        applyClip = dogBarks[soundIndex];
+        
+        childSource.clip = applyClip;
+        childSource.Play();
+        soundIndex = 0;
+        dogNoiseFunction();
+    }
+
     void ApplyNewMesh()
     {
         index = Random.Range(0, dogMesh.Count);
@@ -120,6 +165,7 @@ public class DogController : MonoBehaviour
         weightText.text = weight.ToString();
         ageText.text = age.ToString();
         dogControl.SetActive(true);
+        nearPlayer = true;
     }
 
     public void ClearIdentity()
@@ -131,6 +177,7 @@ public class DogController : MonoBehaviour
         weightText.text = " ";
         ageText.text = " ";
         dogControl.SetActive(false);
+        nearPlayer = false;
     }
 
 
