@@ -8,17 +8,20 @@ public class CarMovement : MonoBehaviour
     bool gamePaused;
     public float acceleration;
     public float steering;
-    public Rigidbody2D rb;
+    public Rigidbody rb;
     public GameObject wheelL;
     public GameObject wheelR;
     public float maxSpeed = 60f;
     private Vector3 pausedVelocity;
     private float pausedAngularVelocity;
+    private float rotationHolder;
+    private Vector3 angleVelocity;
+
 
     void Start()
     {
         gamePaused = false;
-        rb = GetComponent<Rigidbody2D>();
+
     }
 
     private void Update()
@@ -44,7 +47,7 @@ public class CarMovement : MonoBehaviour
     {
         if (rb.velocity.magnitude > maxSpeed)
         {
-            rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxSpeed);
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
         }
 
         if (gamePaused == false)
@@ -52,24 +55,33 @@ public class CarMovement : MonoBehaviour
             float h = -Input.GetAxis("Horizontal");
             float v = Input.GetAxis("Vertical");
 
-            Vector2 speed = transform.up * (v * acceleration);
+            Vector3 speed = transform.up * (v * acceleration);
             rb.AddForce(speed);
 
-            float direction = Vector2.Dot(rb.velocity, rb.GetRelativeVector(Vector2.up));
+
+
+            float direction = Vector3.Dot(rb.velocity, rb.transform.TransformPoint(Vector3.up));
             if (direction >= 0.0f)
             {
-                rb.rotation += h * steering * (rb.velocity.magnitude / 10.0f);
-                //rb.AddTorque((h * steering) * (rb.velocity.magnitude / 10.0f));
+              //  rotationHolder = h * steering * (rb.velocity.magnitude / 10.0f);
+              //  angleVelocity = new Vector3(0f, 0f, rotationHolder);
+              //  Quaternion deltaRotation = Quaternion.Euler(angleVelocity * Time.fixedDeltaTime);
+              //  rb.MoveRotation(rb.rotation * deltaRotation);
+                //rb.AddTorque((h * steering) * (rb.velocity.magnitude / 10.0));
             }
             else
             {
-                rb.rotation -= h * steering * (rb.velocity.magnitude / 10.0f);
+              //  rotationHolder = h * steering * (rb.velocity.magnitude / 10.0f);
+              //  angleVelocity = new Vector3(0f, 0f, -rotationHolder);
+              //  Quaternion deltaRotation = Quaternion.Euler(angleVelocity * Time.fixedDeltaTime);
+              //  rb.MoveRotation(rb.rotation * deltaRotation);
+                //rb.rotation -= h * steering * (rb.velocity.magnitude / 10.0f);
                 //rb.AddTorque((-h * steering) * (rb.velocity.magnitude / 10.0f));
             }
 
-            Vector2 forward = new Vector2(0.0f, 0.5f);
+            Vector3 forward = new Vector3(0.0f, 0.5f, 0.0f);
             float steeringRightAngle;
-            if (rb.angularVelocity > 0)
+            if (rb.angularVelocity.magnitude > 0)
             {
                 steeringRightAngle = -90;
             }
@@ -78,17 +90,17 @@ public class CarMovement : MonoBehaviour
                 steeringRightAngle = 90;
             }
 
-            Vector2 rightAngleFromForward = Quaternion.AngleAxis(steeringRightAngle, Vector3.forward) * forward;
+            Vector3 rightAngleFromForward = Quaternion.AngleAxis(steeringRightAngle, Vector3.forward) * forward;
            // Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(rightAngleFromForward), Color.green);
 
-            float driftForce = Vector2.Dot(rb.velocity, rb.GetRelativeVector(rightAngleFromForward.normalized)/4);
+            float driftForce = Vector3.Dot(rb.velocity, rb.transform.TransformPoint(rightAngleFromForward.normalized)/4);
 
-            Vector2 relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
+            Vector3 relativeForce = (rightAngleFromForward.normalized * -1.0f) * (driftForce * 10.0f);
 
 
            // Debug.DrawLine((Vector3)rb.position, (Vector3)rb.GetRelativePoint(relativeForce), Color.red);
 
-            rb.AddForce(rb.GetRelativeVector(relativeForce));
+            rb.AddForce(rb.transform.TransformPoint(relativeForce));
         }
 
      

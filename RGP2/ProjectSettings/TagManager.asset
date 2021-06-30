@@ -10,6 +10,7 @@ TagManager:
   - Arrow
   - LossSquares
   - Fire
+  - Street
   layers:
   - Default
   - TransparentFX
