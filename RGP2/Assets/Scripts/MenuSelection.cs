@@ -54,7 +54,7 @@ public class MenuSelection : MonoBehaviour
             else if (transform.position.y == 0.95f)                             // if gameobject's Y position equals -1.75...
             {
                 SelectSFX();                                                    // call function...
-                SceneManager.LoadScene("Level");                              // load the project's "Options" scene
+                SceneManager.LoadScene("0");                              // load the project's "Options" scene
             }
 
         }

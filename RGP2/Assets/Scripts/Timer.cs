@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public GameObject pauseScreen;
     public GameObject lossScreen;
     public Text timerText;
-    float timeLeft = 3f;
+    float timeLeft = 180f;
     private bool gamePaused;
 
     // Start is called before the first frame update

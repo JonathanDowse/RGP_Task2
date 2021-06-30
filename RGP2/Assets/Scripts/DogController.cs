@@ -67,7 +67,7 @@ public class DogController : MonoBehaviour
         weight = Random.Range(5.0f, 30.0f);
         weight = (Mathf.Round(weight * 100)) / 100;
         //dogNoiseFunction();
-        InvokeRepeating("Barking", 1f, 5f);
+        InvokeRepeating("Barking", 3f, 5f);
     }
 
 

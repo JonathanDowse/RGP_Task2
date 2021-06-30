@@ -68,21 +68,25 @@ public class PlayerController : MonoBehaviour
         {
             if (dogsSaved == 1 )
             {
+                songSource[0].mute = false;
                 dogIcons[0].SetActive(true);
             }
 
             if (dogsSaved == 2)
             {
+                songSource[1].mute = false;
                 dogIcons[1].SetActive(true);
             }
 
             if (dogsSaved == 3)
             {
+                songSource[2].mute = false;
                 dogIcons[2].SetActive(true);
             }
 
             if (dogsSaved == 4)
             {
+                songSource[3].mute = false;
                 dogIcons[3].SetActive(true);
             }
 
@@ -99,7 +103,7 @@ public class PlayerController : MonoBehaviour
             {
                 dogsSaved = dogsSaved + 1;
                 dropOffText.text = "Good Job";
-                dogCounter.text = dogsSaved.ToString("0") + "/5";
+                dogCounter.text = "/5";
                 vetArrow.SetActive(false);
                 arrowParent.SetActive(true);
                 
