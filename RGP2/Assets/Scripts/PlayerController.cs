@@ -23,10 +23,10 @@ public class PlayerController : MonoBehaviour
     public GameObject snacksParent;
     //GameObject closestArrow;
     //private float oldDistance = 9999;
-    public GameObject lossDogCountText;
     public GameObject winBackdrop;
     public GameObject winScreen;
     public UnityEngine.UI.Image winBackdropImage;
+    public List<AudioSource> songSource;
 
 
     // Start is called before the first frame update
@@ -123,7 +123,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Vet")
         {
@@ -148,6 +148,7 @@ public class PlayerController : MonoBehaviour
                 currentDestroyTarget = other.gameObject;
                 nearDog = true;
                 vetText.text = "Press space to pick me up";
+                other.gameObject.GetComponent<DogController>().FillIdentity();
             }
 
             else if (carryingDog == true)
@@ -155,13 +156,10 @@ public class PlayerController : MonoBehaviour
                 vetText.text = "Please take your current pooch passenger to the vet before you collect me";
             }
         }
-
     }
 
 
-
-
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Vet")
         {
@@ -174,10 +172,11 @@ public class PlayerController : MonoBehaviour
         {
             vetText.text = " ";
             nearDog = false;
+            other.gameObject.GetComponent<DogController>().ClearIdentity();
         }
 
-
     }
+
 
     void PauseTask()
     {
