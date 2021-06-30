@@ -65,7 +65,8 @@ public class DogController : MonoBehaviour
         ApplyDogIdentity();
         age = Random.Range(1, 20);
         weight = Random.Range(5.0f, 30.0f);
-        dogNoiseFunction();
+        //dogNoiseFunction();
+        InvokeRepeating("Barking", 2f, 5f);
     }
 
     // Update is called once per frame
@@ -104,13 +105,13 @@ public class DogController : MonoBehaviour
 
     void Barking()
     {
-        soundIndex = Random.Range(0, dogBarks.Count);
-        applyClip = dogBarks[soundIndex];
+        soundIndex = Random.Range(0, dogLines.Count);
+        applyClip = dogLines[soundIndex];
         
         childSource.clip = applyClip;
         childSource.Play();
         soundIndex = 0;
-        dogNoiseFunction();
+        
     }
 
     void ApplyNewMesh()
@@ -162,6 +163,7 @@ public class DogController : MonoBehaviour
         nameText.text = dogsName;
         breedText.text = dogsBreed;
         dogPhoto.sprite = dogsPic;
+        dogPhoto.enabled = true;
         weightText.text = weight.ToString();
         ageText.text = age.ToString();
         dogControl.SetActive(true);

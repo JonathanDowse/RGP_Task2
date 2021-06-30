@@ -28,6 +28,8 @@ public class PlayerController : MonoBehaviour
     public GameObject winScreen;
     public UnityEngine.UI.Image winBackdropImage;
     public List<AudioSource> songSource;
+    public List<GameObject> dogIcons;
+    public GameObject arrowParent;
 
 
     // Start is called before the first frame update
@@ -57,6 +59,35 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        if (dogsSaved > 0)
+        {
+            if (dogsSaved == 1 )
+            {
+                dogIcons[0].SetActive(true);
+            }
+
+            if (dogsSaved == 2)
+            {
+                dogIcons[1].SetActive(true);
+            }
+
+            if (dogsSaved == 3)
+            {
+                dogIcons[2].SetActive(true);
+            }
+
+            if (dogsSaved == 4)
+            {
+                dogIcons[3].SetActive(true);
+            }
+
+            if (dogsSaved == 5)
+            {
+                dogIcons[4].SetActive(true);
+            }
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (inVet == true && carryingDog == true)
@@ -65,6 +96,7 @@ public class PlayerController : MonoBehaviour
                 dropOffText.text = "Good Job";
                 dogCounter.text = dogsSaved.ToString("0") + "/5";
                 vetArrow.SetActive(false);
+                arrowParent.SetActive(true);
                 
                 //for (int i = 0; i < dogArrows.Length; i++)
                 //{
@@ -121,10 +153,7 @@ public class PlayerController : MonoBehaviour
         carryingDog = true;
         vetArrow.SetActive(true);
         dogsCarried = dogsCarried + 1;
-        for (int i = 0; i < dogArrows.Length; i++)
-        {
-            dogArrows[i].SetActive(false);
-        }
+        arrowParent.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
